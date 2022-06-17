@@ -7,7 +7,6 @@ import java.io.OutputStream;
 import java.time.LocalDateTime;
 
 public class SimplestServerHttpHandler implements HttpHandler {
-    static int requestCounter = 0;
     @Override
     public void handle(HttpExchange httpExchange) throws IOException {
         String requestParams = null;
@@ -23,8 +22,6 @@ public class SimplestServerHttpHandler implements HttpHandler {
     }
 
     private void returnResponse(HttpExchange httpExchange, String request) throws IOException {
-        requestCounter++;
-        System.out.println("Request received: " + requestCounter);
         OutputStream outputStream = httpExchange.getResponseBody();
         StringBuilder response = new StringBuilder("");
         /*Загружаем главную страницу */
