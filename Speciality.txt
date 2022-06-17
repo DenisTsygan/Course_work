@@ -1,0 +1,46 @@
+01411 Secondary education (Physical culture)
+022 Design
+029 Information, library and archival business
+032 History and archeology
+033 Philosophy
+034 Culturology
+035 Philology
+051 Economy
+053 Psychology
+061 Journalism
+071 Accounting and taxation
+072 Finance, banking and insurance
+073 Management
+075 Marketing
+076 Entrepreneurship, trade and exchange activity
+101 Ecology
+104 Physics and astronomy
+113 Applied Mathematics
+121 Software engineering
+122 Computer Science
+123 Computer Engineering
+124 System analysis
+125 Cybersecurity
+126 Information systems and technologies
+131 Applied mechanics
+132 Materials science
+133 Industrial engineering
+136 Metallurgy
+141 Power industry, electrical engineering and electromechanics
+143 Nuclear power
+144 Thermal power engineering
+151 Automation and computer-integrated technologies
+152 Metrology and information-measuring technology
+161 Chemical technology and engineering
+163 Biomedical Engineering
+171 Electronics
+172 Telecommunications and radio engineering
+183 Environmental Technologies
+192 Life and civil engineering
+226 Pharmacy, industrial pharmacy
+231 Social work
+274 Road transport
+275 Transport technologies (by types)
+281 Public administration and administration
+291 International relations, public communications and regional studies
+292 International economic blueprints

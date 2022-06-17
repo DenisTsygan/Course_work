@@ -1,0 +1,509 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+}
+.page_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #003399;
+}
+.page_header .logo {
+  height: 50px;
+}
+.page_header .text {
+  display: flex;
+}
+.page_header .text p {
+  font-weight: bold;
+}
+.page_header .text p:hover {
+  cursor: pointer;
+  color: #0047AB;
+}
+.page_header .text .icon {
+  background-color: white;
+  height: 35px;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menuon {
+  display: block;
+}
+.menuon .triangle-block {
+  background: #2F73B6;
+  height: 10px;
+  padding: 45px 20px;
+  margin: 20px auto;
+  color: #fff;
+  text-align: center;
+  clip-path: polygon(90% 10%, 100% 100%, 0 100%);
+  position: fixed;
+  top: 30px;
+  right: 0;
+  background-color: #2980b9;
+  padding: 30px;
+  width: 180px;
+  transition: 0.5s;
+  z-index: 3;
+}
+.menuon .about_account {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  background-color: #2980b9;
+  padding: 10px;
+  width: 220px;
+  transition: 0.5s;
+  color: white;
+}
+.menuon .about_account .box1 {
+  border: 3px solid #f5f5f5;
+  display: flex;
+}
+.menuon .about_account .box1 .text_status {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.menuon .about_account .box2 {
+  width: 100%;
+}
+.menuon .about_account .box2 input {
+  margin: 10px 0;
+}
+.menuon .about_account .box2 .login {
+  padding: 5px;
+  border: 7px solid white;
+  background-color: #bdbdbd;
+  font-size: 16px;
+  width: 30%;
+}
+.menuon .about_account .box2 .login:hover {
+  cursor: pointer;
+  background-color: #a3a3a3;
+}
+.menuon .about_account .box2 .eror {
+  display: none;
+}
+.menuon .about_account .box2 .eror h2 {
+  display: block;
+  font-size: 18px;
+  color: red;
+}
+.menuoff {
+  display: none;
+}
+.container_filters {
+  margin-top: 100px;
+  max-width: 1200px;
+  margin-left: 15px;
+  border: 7px solid #003399;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.container_filters .row {
+  display: flex;
+  justify-content: space-between;
+}
+.container_filters .row h1 {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.container_filters .row h2 {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.container_filters .filters .row_filters {
+  border-top: 7px solid #003399;
+  margin-left: -1px;
+  display: flex;
+}
+.container_filters .filters .row_filters .box {
+  margin: auto;
+  margin-bottom: 5px;
+}
+.container_filters .filters .row_filters .box p {
+  margin: 10px 0;
+}
+.container_filters .filters .row_filters .box input {
+  color: #212529;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 4px 2px;
+}
+.container_filters .filters .row_filters .box select {
+  line-height: 1.5;
+  color: #212529;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 4px 2px;
+}
+.container_filters .filters .row_filters .border {
+  border: 3.5px solid #003399;
+  background-color: #003399;
+  margin-bottom: -2px;
+  margin-top: -50px;
+}
+.container_table {
+  max-width: 1200px;
+  margin: auto;
+  margin-left: 15px;
+  border: 7px solid #003399;
+  border-radius: 5px;
+}
+.container_table .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.container_table .table th {
+  text-align: center;
+  padding: 5px;
+  background-color: #0047AB;
+  color: white;
+}
+.container_table .table th:nth-child(odd) {
+  background-color: #4169E1;
+}
+.container_table .table td {
+  text-align: center;
+  padding: 5px;
+}
+.container_table .table td:not(:last-child) {
+  border-right: 2px solid #a3a3a3;
+}
+.container_table .table tr {
+  transition: all 0.3s;
+}
+.container_table .table tr:nth-child(even) {
+  background: #f5f5f5;
+}
+.container_table .table tr:hover {
+  background-color: #ccc;
+}
+.container_control {
+  max-width: 1200px;
+  margin-left: 15px;
+  border: 7px solid #003399;
+  margin-top: 10px;
+  height: 50px;
+}
+.container_control .row {
+  display: flex;
+  height: 100%;
+}
+.container_control .row .box {
+  margin: auto;
+  margin-right: 10px;
+}
+.container_control .row .box a {
+  padding: 10px;
+  background: #4169E1;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.container_control .row .box a:hover {
+  background: #0047AB;
+}
+.container_control .row .box button {
+  padding: 10px;
+  background: #4169E1;
+  text-decoration: none;
+  border: 3px solid #003399;
+  border-radius: 3px;
+  color: #551A8B;
+  font-weight: bold;
+  font-size: 15px;
+}
+.container_control .row .box button:hover {
+  background: #0047AB;
+}
+.container_control .row .box .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.container_control .row .box .modal .modal_content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 10px;
+  border: 10px solid #003399;
+  z-index: 10;
+}
+.container_control .row .box .modal .modal_content .close_modal {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 370px;
+  cursor: pointer;
+}
+.container_control .row .box .modal .modal_content .close_modal:hover {
+  color: red;
+}
+.container_control .row .box .modal .modal_content .close_modal2 {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 370px;
+  cursor: pointer;
+}
+.container_control .row .box .modal .modal_content .close_modal2:hover {
+  color: red;
+}
+.container_control .row .box .modal .modal_content .modal_text h1 {
+  font-weight: 100;
+  font-size: 25px;
+}
+.container_control .row .box .modal .modal_content .modal_text .listFiles {
+  margin-left: 0;
+  padding-left: 0;
+}
+.container_control .row .box .modal .modal_content .modal_text .listFiles li {
+  list-style-type: none;
+  padding: 10px 30px;
+  color: #506a6b;
+  background-color: #f5f5f5;
+  font-size: 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.container_control .row .box .modal .modal_content .modal_text .listFiles li:hover {
+  background-color: #ccc;
+}
+.container_control .row .box .modal .modal_content .modal_text li:nth-last-child(1) {
+  margin-bottom: 50px;
+}
+.container_control .row .box .modal .modal_content .modal_text .open {
+  padding: 10px;
+  border: 5px solid #F5F5F5;
+  background-color: #bdbdbd;
+  font-size: 18px;
+  width: 30%;
+}
+.container_control .row .box .modal .modal_content .modal_text .open:hover {
+  cursor: pointer;
+  background-color: #a3a3a3;
+}
+.container_control .row .box .modal .modal_content .modal_text .confirm {
+  font-size: 20px;
+  font-weight: bold;
+  color: #DC143C;
+}
+.container_control .row .box .modal .modal_content .modal_text .filename {
+  border: 5px solid #F5F5F5;
+  font-size: 25px;
+  color: #4169E1;
+}
+.container_control .row .box .modal_save {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.container_control .row .box .modal_save .modal_content_save {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  z-index: 11;
+  border-radius: 10px;
+  border: 10px solid #003399;
+}
+.container_control .row .box .modal_save .modal_content_save p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #DC143C;
+}
+.container_control .row .box .modal_save .modal_content_save .close_modal_window_save {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container_control .row .box .modal_save .modal_content_save .close_modal_window_save:hover {
+  color: red;
+}
+.container_control .row .box .modal_save .modal_content_save .save {
+  padding: 10px;
+  border: 5px solid #F5F5F5;
+  background-color: #bdbdbd;
+  font-size: 18px;
+  width: 30%;
+}
+.container_control .row .box .modal_save .modal_content_save .save:hover {
+  cursor: pointer;
+  background-color: #a3a3a3;
+}
+.container_control .row .box .modal_add {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.container_control .row .box .modal_add .modal_content_add {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  z-index: 11;
+  border-radius: 10px;
+  border: 10px solid #003399;
+}
+.container_control .row .box .modal_add .modal_content_add h {
+  margin: 5px;
+  color: #551A8B;
+}
+.container_control .row .box .modal_add .modal_content_add input {
+  margin: 10px;
+  width: 380px;
+  color: #212529;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 4px 2px;
+}
+.container_control .row .box .modal_add .modal_content_add select {
+  margin: 10px;
+  line-height: 1.5;
+  color: #212529;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 4px 2px;
+  width: 390px;
+}
+.container_control .row .box .modal_add .modal_content_add p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2980b9;
+}
+.container_control .row .box .modal_add .modal_content_add .close_modal_window_add {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container_control .row .box .modal_add .modal_content_add .close_modal_window_add:hover {
+  color: red;
+}
+.container_control .row .box .modal_add .modal_content_add .add {
+  padding: 10px;
+  border: 5px solid #F5F5F5;
+  background-color: #bdbdbd;
+  font-size: 18px;
+  width: 30%;
+}
+.container_control .row .box .modal_add .modal_content_add .add:hover {
+  cursor: pointer;
+  background-color: #a3a3a3;
+}
+.container_control .row .box .modal_edit {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.container_control .row .box .modal_edit .modal_content_edit {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 1400px;
+  z-index: 11;
+  border-radius: 10px;
+  border: 10px solid #003399;
+}
+.container_control .row .box .modal_edit .modal_content_edit #btn_confirm_edit {
+  margin-top: 20px;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit_enrollees .edit_first {
+  width: 80px;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit_enrollees .edit_number {
+  width: 40px;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit_enrollees .edit_fio {
+  width: 100px;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit_enrollees tr td button {
+  background-color: #a3a3a3;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit_enrollees tr td button:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit_speciality {
+  width: 120px;
+}
+.container_control .row .box .modal_edit .modal_content_edit p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #DC143C;
+}
+.container_control .row .box .modal_edit .modal_content_edit .close_modal_window_edit {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container_control .row .box .modal_edit .modal_content_edit .close_modal_window_edit:hover {
+  color: red;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit {
+  padding: 10px;
+  border: 5px solid #F5F5F5;
+  background-color: #bdbdbd;
+  font-size: 18px;
+  width: 30%;
+}
+.container_control .row .box .modal_edit .modal_content_edit .edit:hover {
+  cursor: pointer;
+  background-color: #a3a3a3;
+}
